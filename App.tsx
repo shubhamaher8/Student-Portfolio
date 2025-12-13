@@ -3,7 +3,6 @@ import { Hero } from './components/Hero';
 import { Header } from './components/Header';
 import { StatsGrid } from './components/StatsGrid';
 import { Projects } from './components/Projects';
-import { TerminalConsole } from './components/TerminalConsole';
 import { Footer } from './components/Footer';
 import { Contact } from './components/Contact';
 import { Preloader } from './components/Preloader';
@@ -46,8 +45,6 @@ const App: React.FC = () => {
               <section id="projects" className="scroll-mt-32">
                 <Projects />
               </section>
-
-              <TerminalConsole />
 
               <section id="contact">
                 <Contact />
