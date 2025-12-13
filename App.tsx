@@ -6,12 +6,12 @@ import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { Contact } from './components/Contact';
 import { Preloader } from './components/Preloader';
+import { ProgressiveBlur } from './components/ProgressiveBlur';
 import { CustomCursor } from './components/ui/CustomCursor';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-
 
   return (
     <main className="relative min-h-screen bg-base-black text-white selection:bg-neon-green selection:text-black">
@@ -31,6 +31,7 @@ const App: React.FC = () => {
             </div>
 
             <CustomCursor />
+            <ProgressiveBlur />
             <Header />
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-24 pb-32">
