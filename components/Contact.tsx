@@ -29,7 +29,12 @@ export const Contact: React.FC = () => {
     };
 
     return (
-        <section className="py-32 relative flex justify-center items-center px-4">
+        <section className="py-32 relative flex flex-col items-center px-4">
+            <div className="mb-12 text-center">
+                <h2 className="text-4xl font-display font-bold text-white mb-4">Initialize Connection</h2>
+                <p className="text-gray-400">Ready to collaborate on your next AI-driven product?</p>
+            </div>
+
             {/* Terminal Container */}
             <div className="w-full max-w-2xl bg-base-card border border-data-cyan/30 rounded shadow-2xl shadow-neon-cyan/5 overflow-hidden font-mono">
 
