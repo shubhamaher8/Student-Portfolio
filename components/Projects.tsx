@@ -19,7 +19,7 @@ const projectData: Project[] = [
     description: "A comprehensive phishing simulation and security awareness platform. Features real-time threat analytics, automated campaign orchestration, and employee risk scoring models.",
     year: "2024",
     category: "CYBERSEC",
-    imageSrc: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000",
+    imageSrc: "assets/Social.png",
     tags: ["React", "Node.js", "MongoDB", "Auth0"],
     githubLink: "#",
     demoLink: "#"
@@ -29,7 +29,7 @@ const projectData: Project[] = [
     description: "AI-powered agricultural intelligence system providing crop disease detection, localized weather forecasting, and market price prediction for Indian farmers.",
     year: "2024",
     category: "AGRITECH AI",
-    imageSrc: "https://images.unsplash.com/photo-1625246333195-bf43322da331?auto=format&fit=crop&q=80&w=1000",
+    imageSrc: "assets/Krishi.png",
     tags: ["TensorFlow", "FastAPI", "Next.js", "PostgreSQL"],
     githubLink: "#",
     demoLink: "#"
@@ -39,7 +39,7 @@ const projectData: Project[] = [
     description: "Decentralized peer-to-peer energy trading platform utilizing Ethereum smart contracts. Enables local communities to trade surplus solar energy securely and transparently.",
     year: "2023",
     category: "WEB3 / TEZOS",
-    imageSrc: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1000",
+    imageSrc: "assets/Shakti.png",
     tags: ["Solidity", "Ether.js", "React", "Tailwind"],
     githubLink: "#",
     demoLink: "#"
@@ -49,7 +49,7 @@ const projectData: Project[] = [
     description: "Financial risk assessment tool leveraging an ensemble of machine learning models to predict loan defaults with 94% accuracy. Includes interactive visualization dashboard.",
     year: "2023",
     category: "FINTECH ML",
-    imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    imageSrc: "assets/Loan.png",
     tags: ["Python", "Scikit-Learn", "Streamlit", "Pandas"],
     githubLink: "#",
     demoLink: "#"
