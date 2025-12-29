@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Code, Menu, X } from 'lucide-react';
+import { Code, Menu, X, Layers, Cpu, MessageSquare } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export const Header: React.FC = () => {
@@ -28,10 +28,10 @@ export const Header: React.FC = () => {
     }, [mobileMenuOpen]);
 
     const navLinks = [
-        { name: 'Work', href: '#projects' },
-        { name: 'Stack', href: '#skills' },
-        { name: 'Career', href: '#home' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '#home', icon: Code, iconClass: 'text-neon-green' },
+        { name: 'Stack', href: '#skills', icon: Cpu, iconClass: 'text-neon-green' },
+        { name: 'Project', href: '#projects', icon: Layers, iconClass: 'text-neon-green' },
+        { name: 'Contact', href: '#contact', icon: MessageSquare, iconClass: 'text-neon-green' },
     ];
 
     const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
@@ -57,19 +57,22 @@ export const Header: React.FC = () => {
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex items-center gap-8">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="relative text-sm font-mono text-gray-400 hover:text-white transition-colors py-1 group"
-                            >
-                                <span className="relative z-10 flex items-center">
-                                    <span className="text-neon-green text-xs opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all inline-block mr-1">&gt;</span>
-                                    {link.name}
-                                </span>
-                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-green group-hover:w-full transition-all duration-300 ease-out" />
-                            </a>
-                        ))}
+                        {navLinks.map((link) => {
+                            const Icon = link.icon;
+                            return (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    className="relative text-sm font-mono text-gray-400 hover:text-white transition-colors py-1 group"
+                                >
+                                    <span className="relative z-10 flex items-center gap-2">
+                                        <Icon className={`h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all ${link.iconClass}`} />
+                                        {link.name}
+                                    </span>
+                                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-green group-hover:w-full transition-all duration-300 ease-out" />
+                                </a>
+                            );
+                        })}
                     </nav>
 
                     {/* Mobile Menu Button - Hamburger */}
@@ -116,23 +119,26 @@ export const Header: React.FC = () => {
 
                             {/* Nav Links */}
                             <nav className="flex flex-col gap-6 px-4">
-                                {navLinks.map((link, index) => (
-                                    <motion.a
-                                        key={link.name}
-                                        href={link.href}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        initial={{ opacity: 0, x: 50 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: 0.1 + index * 0.1 }}
-                                        className="relative text-5xl font-mono font-bold text-white group w-fit"
-                                    >
-                                        <span className="relative z-10 flex items-center gap-4">
-                                            <span className="text-neon-green text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">&gt;</span>
-                                            {link.name}
-                                        </span>
-                                        <span className="absolute bottom-0 left-0 w-0 h-1 bg-neon-green group-hover:w-full transition-all duration-300 ease-out" />
-                                    </motion.a>
-                                ))}
+                                {navLinks.map((link, index) => {
+                                    const Icon = link.icon;
+                                    return (
+                                        <motion.a
+                                            key={link.name}
+                                            href={link.href}
+                                            onClick={() => setMobileMenuOpen(false)}
+                                            initial={{ opacity: 0, x: 50 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: 0.1 + index * 0.1 }}
+                                            className="relative text-5xl font-mono font-bold text-white group w-fit"
+                                        >
+                                            <span className="relative z-10 flex items-center gap-4">
+                                                <Icon className={`h-10 w-10 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${link.iconClass}`} />
+                                                {link.name}
+                                            </span>
+                                            <span className="absolute bottom-0 left-0 w-0 h-1 bg-neon-green group-hover:w-full transition-all duration-300 ease-out" />
+                                        </motion.a>
+                                    );
+                                })}
                             </nav>
                         </motion.div>
                     )}
