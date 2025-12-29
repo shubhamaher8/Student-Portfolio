@@ -47,8 +47,13 @@ export const CustomCursor: React.FC = () => {
             const isInteractive =
                 target.tagName === 'A' ||
                 target.tagName === 'BUTTON' ||
+                target.tagName === 'IMG' ||
+                target.tagName === 'INPUT' ||
+                target.tagName === 'TEXTAREA' ||
                 target.closest('a') ||
-                target.closest('button');
+                target.closest('button') ||
+                target.getAttribute('data-cursor') === 'hover' ||
+                window.getComputedStyle(target).cursor === 'pointer';
 
             if (isInteractive) {
                 setIsHovered(false);

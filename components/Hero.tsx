@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
         </motion.div>
 
         <h1 className="text-6xl md:text-8xl font-display font-bold leading-[0.9] tracking-tight text-white mb-8">
-          GenAI + <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Full-Stack Dev</span>
+          Building <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Digital Worlds</span>
         </h1>
 
         {/* Intro Text */}
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           className="relative overflow-hidden border-l-2 border-neon-green pl-6 max-w-xl mb-8"
         >
           <p className="text-gray-300 text-lg leading-relaxed">
-            GenAI and full-stack developer focused on building clean, production-ready applications that solve real problems and deliver measurable impact. I combine modern engineering practices with fast iteration to ship reliable, user-centric products powered by AI.
+            Software developer focused on building clean, reliable applications that solve real problems and create meaningful digital experiences. I enjoy working across the product lifecycle while keeping code quality, usability, and simplicity at the core.
           </p>
 
 
@@ -91,9 +91,9 @@ const Hero: React.FC = () => {
               </div>
 
               {[
-                { label: 'FULL_STACK', active: true, sub: ['Next.js', 'Supabase', 'PostgreSQL'] },
-                { label: 'AI_ENGINEERING', active: true, sub: ['RAG Systems', 'LangChain', 'LLM Integration'] },
-                { label: 'SYSTEM_DESIGN', active: true, sub: ['Microservices', 'Cloud Architecture', 'API Design'] }
+                { label: 'SOFTWARE_DEV', active: true, sub: ['HTML/ CSS/ JavaScript', 'Java', 'React/ Next.js'] },
+                { label: 'BACKEND_SYSTEMS', active: true, sub: ['Node.js', 'SQL/ NoSQL', 'Supabase'] },
+                { label: 'DEVELOPER_FOUNDATIONS', active: true, sub: ['Git Workflow', 'Cloud DevOps', 'API Handling'] }
               ].map((item, idx) => (
                 <div key={idx} className={`relative pl-6 border-l ${item.active ? 'border-neon-blue' : 'border-gray-800'}`}>
                   <div className={`absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full border-2 ${item.active ? 'bg-base-black border-neon-blue' : 'bg-base-black border-gray-700'}`} />

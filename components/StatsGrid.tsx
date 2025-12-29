@@ -3,18 +3,21 @@ import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
 
 const marqueeSkills = [
-  "React", "Next.js", "JavaScript", "REST APIs", "Supabase", "SQL (Postgres)", "Java", "Machine Learning", "GenAI", "Git & GitHub"
+  "HTML & CSS", "JavaScript", "REST APIs", "Supabase", "SQL", "Java", "Machine Learning", "GenAI", "Git & GitHub", "Cloud", "React & Next.js"
 ];
 
 const badges = [
+  "HTML & CSS",
+  "JavaScript",
+  "Java",
   "React & Next.js",
-  "JavaScript (ES6+)",
   "REST APIs & Backend Integration",
   "Supabase",
-  "SQL (PostgreSQL)",
-  "Java",
-  "Machine Learning & GenAI APIs",
-  "Git & GitHub"
+  "MongoDB",
+  "SQL Database",
+  "Git & GitHub",
+  "Machine Learning",
+  "Generative AI",
 ];
 
 const certs = [

@@ -21,8 +21,8 @@ const projectData: Project[] = [
     category: "CYBERSEC",
     imageSrc: "/Social.png",
     tags: ["React", "Node.js", "MongoDB", "Auth0"],
-    githubLink: "#",
-    demoLink: "#"
+    githubLink: "https://github.com/shubhamaher8/SocialGuard",
+    demoLink: "https://social-guard-rouge.vercel.app/"
   },
   {
     title: "KRISHI MITRA 2.0",
@@ -31,8 +31,8 @@ const projectData: Project[] = [
     category: "AGRITECH AI",
     imageSrc: "/Krishi.png",
     tags: ["TensorFlow", "FastAPI", "Next.js", "PostgreSQL"],
-    githubLink: "#",
-    demoLink: "#"
+    githubLink: "https://github.com/shubhamaher8/Krishi-Mitra-2",
+    demoLink: "https://krishi-mitra-2.vercel.app/"
   },
   {
     title: "SHAKTI EXCHANGE",
@@ -41,8 +41,8 @@ const projectData: Project[] = [
     category: "WEB3 / TEZOS",
     imageSrc: "/Shakti.png",
     tags: ["Solidity", "Ether.js", "React", "Tailwind"],
-    githubLink: "#",
-    demoLink: "#"
+    githubLink: "https://github.com/shubhamaher8/Shakti-Exchange",
+    demoLink: "https://shakti-exchange.vercel.app/"
   },
   {
     title: "LOAN PREDICTOR",
@@ -51,8 +51,8 @@ const projectData: Project[] = [
     category: "FINTECH ML",
     imageSrc: "/Loan.png",
     tags: ["Python", "Scikit-Learn", "Streamlit", "Pandas"],
-    githubLink: "#",
-    demoLink: "#"
+    githubLink: "https://github.com/shubhamaher8/Loan-Default-Prediction-ML-Model",
+    demoLink: "https://loan-default-prediction-ml-model.streamlit.app/"
   }
 ];
 
@@ -64,7 +64,7 @@ export const Projects: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-24">
-          <span className="font-mono text-data-cyan text-sm tracking-widest">// DEPLOYED_MODULES</span>
+          <span className="font-mono text-data-cyan text-sm tracking-widest">// ENGINEERED_WORK</span>
         </div>
 
         <div className="flex flex-col gap-32">
