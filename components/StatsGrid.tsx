@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
+import Marquee from 'react-fast-marquee';
 
 const marqueeSkills = [
   "HTML & CSS", "JavaScript", "REST APIs", "Supabase", "SQL", "Java", "Machine Learning", "GenAI", "Git & GitHub", "Cloud", "React & Next.js"
@@ -36,13 +37,13 @@ const StatsGrid: React.FC = () => {
         <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-base-black to-transparent z-10" />
         <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-base-black to-transparent z-10" />
 
-        <div className="flex animate-marquee whitespace-nowrap gap-12">
-          {[...marqueeSkills, ...marqueeSkills, ...marqueeSkills].map((skill, i) => (
-            <span key={i} className="text-2xl font-display font-bold text-white/20 uppercase tracking-widest">
+        <Marquee gradient={false} speed={50} pauseOnHover={true}>
+          {marqueeSkills.map((skill, i) => (
+            <span key={i} className="text-2xl font-display font-bold text-white/20 uppercase tracking-widest px-6">
               {skill} <span className="text-neon-green mx-4">·</span>
             </span>
           ))}
-        </div>
+        </Marquee>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

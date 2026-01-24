@@ -55,17 +55,14 @@
           animation: {
             'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'scan': 'scan 2s linear infinite',
-            'marquee': 'marquee 25s linear infinite',
+
           },
           keyframes: {
             scan: {
               '0%': { transform: 'translateY(-100%)' },
               '100%': { transform: 'translateY(100%)' }
             },
-            marquee: {
-              '0%': { transform: 'translateX(0%)' },
-              '100%': { transform: 'translateX(-100%)' }
-            }
+
           }
         }
       }
@@ -126,8 +123,6 @@
       z-index: 50;
       opacity: 0.15;
     }
-
-
   </style>
   <script type="importmap">
 {
@@ -136,7 +131,8 @@
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-fast-marquee": "https://aistudiocdn.com/react-fast-marquee@^1.6.5"
   }
 }
 </script>
