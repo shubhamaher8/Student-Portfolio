@@ -17,37 +17,37 @@ const projectData: Project[] = [
   {
     title: "SOCIAL GUARD",
     description: "A comprehensive phishing simulation and security awareness platform. Features real-time threat analytics, automated campaign orchestration, and employee risk scoring models.",
-    year: "2024",
-    category: "CYBERSEC",
+    year: "2025",
+    category: "CYBERSEC TRAINING",
     imageSrc: "/Social.png",
-    tags: ["React", "Node.js", "MongoDB", "Auth0"],
+    tags: ["HTML", "CSS", "JS", "Parcel", "Twilio API"],
     githubLink: "https://github.com/shubhamaher8/SocialGuard",
     demoLink: "https://social-guard-rouge.vercel.app/"
   },
   {
     title: "KRISHI MITRA 2.0",
     description: "AI-powered agricultural intelligence system providing crop disease detection, localized weather forecasting, and market price prediction for Indian farmers.",
-    year: "2024",
+    year: "2025",
     category: "AGRITECH AI",
     imageSrc: "/Krishi.png",
-    tags: ["TensorFlow", "FastAPI", "Next.js", "PostgreSQL"],
+    tags: ["Next.js", "TypeScript", "OpenAPI", "Supabase"],
     githubLink: "https://github.com/shubhamaher8/Krishi-Mitra-2",
     demoLink: "https://krishi-mitra-2.vercel.app/"
   },
   {
     title: "SHAKTI EXCHANGE",
-    description: "Decentralized peer-to-peer energy trading platform utilizing Ethereum smart contracts. Enables local communities to trade surplus solar energy securely and transparently.",
-    year: "2023",
-    category: "WEB3 / TEZOS",
+    description: "Decentralized peer-to-peer energy trading platform utilizing Ethereum smart contracts. Enables local communities to trade surplus made energy securely and transparently.",
+    year: "2025",
+    category: "WEB3 / P2P ENERGY",
     imageSrc: "/Shakti.png",
-    tags: ["Solidity", "Ether.js", "React", "Tailwind"],
+    tags: ["Solidity", "HTML", "CSS", "JS", "MetaMask"],
     githubLink: "https://github.com/shubhamaher8/Shakti-Exchange",
     demoLink: "https://shakti-exchange.vercel.app/"
   },
   {
     title: "LOAN PREDICTOR",
     description: "Financial risk assessment tool leveraging an ensemble of machine learning models to predict loan defaults with 94% accuracy. Includes interactive visualization dashboard.",
-    year: "2023",
+    year: "2024",
     category: "FINTECH ML",
     imageSrc: "/Loan.png",
     tags: ["Python", "Scikit-Learn", "Streamlit", "Pandas"],
@@ -63,8 +63,11 @@ export const Projects: React.FC = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="mb-24">
-          <span className="font-mono text-data-cyan text-sm tracking-widest">// ENGINEERED_WORK</span>
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-1 h-8 bg-neon-blue" />
+            <h3 className="text-4xl font-bold text-white">Engineered  Work</h3>
+          </div>
         </div>
 
         <div className="flex flex-col gap-32">
@@ -94,8 +97,8 @@ export const Projects: React.FC = () => {
                     alt={project.title}
                     className="w-full h-full object-cover"
                     variants={{
-                      initial: { filter: "grayscale(100%)", scale: 1 },
-                      hover: { filter: "grayscale(0%)", scale: 1.05 }
+                      initial: { scale: 1 },
+                      hover: { scale: 1.05 }
                     }}
                     transition={{ duration: 0.5 }}
                   />
@@ -142,14 +145,24 @@ export const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-8 pt-4 border-t border-white/5">
-                  <a href={project.githubLink} className="flex items-center gap-2 text-data-cyan hover:text-white transition-colors group">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-data-cyan hover:text-white transition-colors group"
+                  >
                     <Github size={18} />
                     <span className="font-mono text-sm relative">
                       VIEW_CODE
                       <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-data-cyan group-hover:w-full transition-all duration-300" />
                     </span>
                   </a>
-                  <a href={project.demoLink} className="flex items-center gap-2 text-data-cyan hover:text-white transition-colors group">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-data-cyan hover:text-white transition-colors group"
+                  >
                     <ExternalLink size={18} />
                     <span className="font-mono text-sm relative">
                       LIVE_DEMO
