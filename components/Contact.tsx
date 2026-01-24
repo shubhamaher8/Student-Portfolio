@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
                 {/* Content Area */}
                 <div className="p-6 md:p-12">
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8">
-                        <input type="hidden" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY} {...register("access_key")} />
+                        <input type="hidden" value="6175c86e-2460-4323-bdd4-86da07fe269c" {...register("access_key")} />
 
                         <TerminalInput
                             label="ENTER_IDENTITY:"
