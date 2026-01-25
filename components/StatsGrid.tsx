@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
 import Marquee from 'react-fast-marquee';
 
 const marqueeSkills = [
