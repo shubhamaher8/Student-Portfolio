@@ -11,6 +11,7 @@ interface Project {
   tags: string[];
   githubLink: string;
   demoLink: string;
+  titleColor: string;
 }
 
 const projectData: Project[] = [
@@ -22,7 +23,8 @@ const projectData: Project[] = [
     imageSrc: "/Social.png",
     tags: ["HTML", "CSS", "JS", "Parcel", "Twilio API"],
     githubLink: "https://github.com/shubhamaher8/SocialGuard",
-    demoLink: "https://social-guard-rouge.vercel.app/"
+    demoLink: "https://social-guard-rouge.vercel.app/",
+    titleColor: "bg-gradient-to-r from-red-500 via-orange-400 to-yellow-500"
   },
   {
     title: "KRISHI MITRA 2.0",
@@ -32,7 +34,8 @@ const projectData: Project[] = [
     imageSrc: "/Krishi.png",
     tags: ["Next.js", "TypeScript", "OpenAPI", "Supabase"],
     githubLink: "https://github.com/shubhamaher8/Krishi-Mitra-2",
-    demoLink: "https://krishi-mitra-2.vercel.app/"
+    demoLink: "https://krishi-mitra-2.vercel.app/",
+    titleColor: "bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500"
   },
   {
     title: "SHAKTI EXCHANGE",
@@ -42,7 +45,8 @@ const projectData: Project[] = [
     imageSrc: "/Shakti.png",
     tags: ["Solidity", "HTML", "CSS", "JS", "MetaMask"],
     githubLink: "https://github.com/shubhamaher8/Shakti-Exchange",
-    demoLink: "https://shakti-exchange.vercel.app/"
+    demoLink: "https://shakti-exchange.vercel.app/",
+    titleColor: "bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500"
   },
   {
     title: "LOAN PREDICTOR",
@@ -52,7 +56,8 @@ const projectData: Project[] = [
     imageSrc: "/Loan.png",
     tags: ["Python", "Scikit-Learn", "Streamlit", "Pandas"],
     githubLink: "https://github.com/shubhamaher8/Loan-Default-Prediction-ML-Model",
-    demoLink: "https://loan-default-prediction-ml-model.streamlit.app/"
+    demoLink: "https://loan-default-prediction-ml-model.streamlit.app/",
+    titleColor: "bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-400"
   }
 ];
 
@@ -124,7 +129,7 @@ export const Projects: React.FC = () => {
                   <span>{project.category}</span>
                 </div>
 
-                <h3 className="font-oswald text-5xl md:text-6xl font-bold text-white uppercase leading-[0.9]">
+                <h3 className={`font-oswald text-5xl md:text-6xl font-bold uppercase leading-[0.9] text-transparent bg-clip-text ${project.titleColor}`}>
                   {project.title}
                 </h3>
 

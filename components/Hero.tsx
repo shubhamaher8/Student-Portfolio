@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           <span className="text-xs font-mono text-gray-300 tracking-widest uppercase">Identity: Shubham Aher</span>
         </motion.div>
 
-        <h1 className="text-6xl md:text-8xl font-display font-bold leading-[0.9] tracking-tight text-white mb-8">
+        <h1 className="text-8xl font-display font-bold leading-[1] tracking-tight text-white mb-8">
           Building <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Digital Worlds</span>
         </h1>

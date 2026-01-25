@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
 
       {/* Bottom Links */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 px-4 md:px-0">
-        <div className="text-left">
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <div className="flex items-center gap-2 text-neon-green font-bold mb-2">
              <span className="text-xl">&gt;_</span> SHUBHAM AHER
           </div>
