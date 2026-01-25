@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
         </motion.h2>
         
         <p className="text-gray-400 max-w-md mx-auto mb-12">
-          Let's build robust, AI-powered solutions that scale.
+          Let's build robust, Real world solutions that scale.
         </p>
 
         <a href="mailto:shubhamaher758@gmail.com" className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neon-green hover:text-black transition-colors duration-300">
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-2 text-neon-green font-bold mb-2">
              <span className="text-xl">&gt;_</span> SHUBHAM AHER
           </div>
-          <p className="text-sm text-gray-500 max-w-xs">Enthusiast + Full-Stack Developer.</p>
+          <p className="text-sm text-gray-500 max-w-xs">Technologist + Full-Stack Developer.</p>
         </div>
 
         <div className="flex gap-6">

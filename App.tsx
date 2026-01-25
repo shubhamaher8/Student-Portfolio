@@ -25,7 +25,7 @@ const App: React.FC = () => {
               <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-neon-green/5 rounded-full blur-[120px]" />
               <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-neon-blue/5 rounded-full blur-[120px]" />
               {/* Dot Grid */}
-              <div className="absolute inset-0 opacity-[0.08]"
+              <div className="absolute inset-0 opacity-[0.11]"
                 style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
               </div>
             </div>

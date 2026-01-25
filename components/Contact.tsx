@@ -33,7 +33,7 @@ export const Contact: React.FC = () => {
         <section className="relative flex flex-col items-center px-4">
             <div className="mb-12 text-center">
                 <h2 className="text-4xl font-display font-bold text-white mb-4">Initialize Connection</h2>
-                <p className="text-gray-400">Ready to collaborate on your next AI-driven product?</p>
+                <p className="text-gray-400">Ready to collaborate on your next product initative?</p>
             </div>
 
             {/* Terminal Container */}
