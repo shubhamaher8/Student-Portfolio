@@ -69,7 +69,7 @@ export const Projects: React.FC = () => {
           </div>
         </div>
       <div className="px-2">
-        <div className="flex flex-col gap-32">
+        <div className="flex flex-col gap-20">
           {projectData.map((project, index) => (
             <div
               key={index}
