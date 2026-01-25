@@ -4,7 +4,7 @@ import { ArrowUpRight, Linkedin, Github, Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative pt-32 pb-12 border-t border-white/5 mt-12">
+    <footer className="relative pt-20  border-t border-white/5 mt-12">
       
       {/* Large CTA */}
       <div className="text-center mb-24">
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-2 text-neon-green font-bold mb-2">
              <span className="text-xl">&gt;_</span> SHUBHAM AHER
           </div>
-          <p className="text-sm text-gray-500 max-w-xs">GenAI + Full-Stack Developer.</p>
+          <p className="text-sm text-gray-500 max-w-xs">Enthusiast + Full-Stack Developer.</p>
         </div>
 
         <div className="flex gap-6">
@@ -55,8 +55,8 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* Copyright */}
-      <div className="text-center mt-16 text-xs text-gray-800 font-mono">
-        SYSTEM_ID: SA_PORTFOLIO_V2.0 // ALL RIGHTS RESERVED 2025
+      <div className="text-center mt-4 text-xs font-bold text-white font-mono" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.7), 0 0 2px #00fff7' }}>
+        SYSTEM_ID: SA_PORTFOLIO_V2.0 // MADE WITH LOVE
       </div>
     </footer>
   );

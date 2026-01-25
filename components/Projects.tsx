@@ -58,7 +58,7 @@ const projectData: Project[] = [
 
 export const Projects: React.FC = () => {
   return (
-    <section className="relative py-6 flex flex-col gap-24 overflow-hidden">
+    <section className="relative flex flex-col gap-24 overflow-hidden pb-16">
       {/* Background Grid Accent */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
        <div className="relative z-10 w-full">
@@ -173,9 +173,6 @@ export const Projects: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/* Decorative footer line */}
-        <div className="mt-32 w-full h-[1px] bg-gradient-to-r from-transparent via-data-cyan/20 to-transparent" />
       </div>
       </div>
     </section>

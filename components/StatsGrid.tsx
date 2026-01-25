@@ -11,7 +11,8 @@ const badges = [
   "JavaScript",
   "Java",
   "React & Next.js",
-  "REST APIs & Backend Integration",
+  "REST APIs",
+  "Backend",
   "Supabase",
   "MongoDB",
   "SQL Database",
@@ -29,7 +30,7 @@ const certs = [
 
 const StatsGrid: React.FC = () => {
   return (
-    <section className="relative py-6 flex flex-col gap-24 overflow-hidden">
+    <section className="relative flex flex-col gap-24 overflow-hidden">
 
       {/* Marquee Section */}
       <div className="relative w-full overflow-hidden border-y border-white/5 bg-white/[0.02] backdrop-blur-sm py-4">
@@ -73,13 +74,19 @@ const StatsGrid: React.FC = () => {
           <div className="w-1 h-8 bg-neon-blue" />
           <h3 className="text-4xl font-bold text-white">Certifications</h3>
         </div>
-        <div className="relative p-6 rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-sm w-full max-w-xl">
+        <div className="relative p-6 rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-sm w-full max-w-2xl">
           <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-neon-green/30 rounded-tr-xl" />
+          <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-neon-green/30 rounded-tl-xl" />
+          <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-neon-green/30 rounded-br-xl" />
+          <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-neon-green/30 rounded-bl-xl" />
           <div className="space-y-4">
             {certs.map((cert, idx) => (
-              <div key={idx} className="flex flex-col">
-                <span className="text-white font-medium text-lg">{cert.name}</span>
-                <span className="text-xs font-mono text-gray-500 uppercase">{cert.issuer}</span>
+              <div key={idx} className="mb-4">
+                <div className="flex items-center gap-3">
+                  <span className="text-neon-green font-bold text-xl">{idx + 1}.</span>
+                  <span className="text-white font-medium text-lg">{cert.name}</span>
+                </div>
+                <span className="ml-8 text-sm font-mono text-gray-500 uppercase">{cert.issuer}</span>
               </div>
             ))}
           </div>
