@@ -2,7 +2,15 @@
 
 A modern, interactive portfolio website showcasing the work of Shubham Aher, a GenAI and Full-Stack Developer specializing in building production-ready applications.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000) <!-- Replace with actual screenshot -->
+## 📸 Portfolio Screenshots
+
+<table>
+  <tr>
+      <img src="public/portfolio.png" alt="Homepage Screenshot" width="420"/>
+      <b>Homepage View</b>
+  </tr>
+</table>
+
 
 ## 🚀 Features
 
