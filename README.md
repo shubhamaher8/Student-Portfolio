@@ -6,6 +6,7 @@ A modern, interactive portfolio website to showcase skills, projects, and profes
 ## Live Demo
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://shubham-aher.vercel.app/)
+
 [![Live Project](https://img.shields.io/badge/Live%20Project-shubhamaher.vercel.app-green?style=for-the-badge&logo=vercel)](https://shubham-aher.vercel.app/)
 
 ## Portfolio Screenshots
