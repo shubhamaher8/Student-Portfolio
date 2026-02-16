@@ -1,96 +1,94 @@
-# Shubham Aher Portfolio
 
-A modern, interactive portfolio website showcasing the work of Shubham Aher, a GenAI and Full-Stack Developer specializing in building production-ready applications.
+# Student Portfolio
 
-## 📸 Portfolio Screenshots
+A modern, interactive portfolio website to showcase skills, projects, and professional achievements.
+
+## Live Demo
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://shubham-aher.vercel.app/)
+[![Live Project](https://img.shields.io/badge/Live%20Project-shubhamaher.vercel.app-green?style=for-the-badge&logo=vercel)](https://shubham-aher.vercel.app/)
+
+## Portfolio Screenshots
 
 <table>
   <tr>
-      <img src="public/portfolio.png" alt="Homepage Screenshot" width="420"/>
-      <b>Homepage View</b>
+    <td align="center">
+      <img src="public/Homepage.png" alt="Landing Screenshot" width="420"/>
+      <br/>
+      <b>Landing View</b>
+    </td>
+    <td align="center">
+      <img src="public/Overview.png" alt="End Screenshot" width="420"/>
+      <br/>
+      <b>Closing View</b>
+    </td>
   </tr>
 </table>
 
 
-## 🚀 Features
+## Features
 
-- **Interactive Hero Section**: Dynamic introduction with animated elements and resume download
-- **Skills Showcase**: Technical arsenal display with certifications and expertise areas
-- **Project Gallery**: Featured projects including cybersecurity, agritech AI, Web3, and fintech ML solutions
-- **Terminal Console**: Interactive command-line interface for contact and GitHub access
-- **Contact Form**: Secure contact form with Web3Forms integration
-- **Custom Cursor**: Enhanced user experience with custom cursor animations
-- **Responsive Design**: Optimized for all devices with modern UI/UX
-- **Smooth Animations**: Powered by Framer Motion for fluid interactions
+- **Dynamic Hero Section:** Animated introduction with resume download.
+- **Contact Form:** Secure, Web3Forms-powered messaging.
+- **Responsive Design:** Optimized for all devices.
+- **Smooth Animations:** Powered by Framer Motion.
 
-## 🛠️ Technologies Used
 
-### Frontend
-- **React 19** - Modern React with hooks and concurrent features
-- **TypeScript** - Type-safe JavaScript development
-- **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library for React
+## Technology Stack
 
-### UI Components & Icons
-- **Lucide React** - Beautiful icon library
-- **React Hook Form** - Performant forms with easy validation
+**Frontend:**
+- React 19 (with hooks & concurrent features)
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
 
-### Development Tools
-- **ESLint** - Code linting
-- **TypeScript Compiler** - Type checking
+##  Prerequisites
 
-## 📋 Prerequisites
+- Node.js v16 or higher
+- npm or yarn
 
-- Node.js (v16 or higher)
-- npm or yarn package manager
 
-## 🚀 Installation
+## Getting Started
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/shubhamaher8/shubham-aher-portfolio.git
-   cd shubham-aher-portfolio
-   ```
+  ```bash
+  git clone https://github.com/shubhamaher8/shubham-aher-portfolio.git
+  cd shubham-aher-portfolio
+  ```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+  ```bash
+  npm install
+  ```
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+3. **Start the development server**
+  ```bash
+  npm run dev
+  ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:3000`
+  Visit [http://localhost:3000](http://localhost:3000)
 
-## 📜 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-
-## 🏗️ Project Structure
+## Project Structure
 
 ```
-shubham-aher-portfolio/
+Student-Portfolio/
 ├── public/
-├── src/
-│   ├── components/
-│   │   ├── ui/
-│   │   │   └── CustomCursor.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Preloader.tsx
-│   │   ├── Projects.tsx
-│   │   ├── StatsGrid.tsx
-│   │   └── TerminalConsole.tsx
-│   ├── App.tsx
-│   └── index.tsx
+├── components/
+│   ├── ui/
+│   │   └── CustomCursor.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Preloader.tsx
+│   ├── Projects.tsx
+│   ├── StatsGrid.tsx
+│   └── TerminalConsole.tsx
+├── App.tsx
+├── index.tsx
 ├── index.html
 ├── package.json
 ├── tsconfig.json
@@ -98,55 +96,22 @@ shubham-aher-portfolio/
 └── README.md
 ```
 
-## 🎯 Key Components
 
-### Hero Section
-Introduces Shubham Aher with a compelling tagline and direct resume download link.
+## Design Principles
 
-### Skills Grid
-Displays technical skills, certifications, and expertise areas with animated marquee effect.
+- **Dark Theme:** Cyberpunk-inspired with neon accents.
+- **Performance:** Optimized animations, lazy loading.
+- **Accessibility:** Semantic HTML, keyboard navigation.
 
-### Projects Section
-Showcases four major projects:
-- **SOCIAL GUARD**: Cybersecurity phishing simulation platform
-- **KRISHI MITRA 2.0**: AI-powered agricultural intelligence system
-- **SHAKTI EXCHANGE**: Web3 decentralized energy trading platform
-- **LOAN PREDICTOR**: Machine learning financial risk assessment tool
 
-### Terminal Console
-Interactive terminal interface allowing users to:
-- Type `email` to access contact information
-- Type `github` to visit GitHub profile
-- Type `clear` to reset the terminal
+## Contributing
 
-### Contact Form
-Terminal-styled contact form with secure submission via Web3Forms API.
-
-## 🎨 Design Philosophy
-
-- **Dark Theme**: Cyberpunk-inspired dark aesthetic with neon accents
-- **Terminal Aesthetics**: Code-inspired design elements throughout
-- **Performance First**: Optimized animations and lazy loading
-- **Accessibility**: Semantic HTML and keyboard navigation support
-
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and improvements are welcome! Please feel free to:
+Contributions and suggestions are welcome! To contribute:
 
 1. Fork the repository
 2. Create a feature branch
-3. Submit a pull request with your improvements
+3. Submit a pull request
 
-## 📄 License
+## License
 
-This project is private and proprietary.
-
-## 📞 Contact
-
-- **Email**: shubhamaher758@gmail.com
-- **GitHub**: [shubhamaher8](https://github.com/shubhamaher8)
-- **LinkedIn**: [Shubham Aher](https://linkedin.com/in/shubham-aher) <!-- Add actual link -->
-
----
-
-Built with ❤️ using React, TypeScript, and modern web technologies.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
