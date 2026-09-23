@@ -23,7 +23,7 @@ const projectData: Project[] = [
     imageSrc: "/Social.png",
     tags: ["HTML", "CSS", "JS", "Parcel", "Twilio API"],
     githubLink: "https://github.com/shubhamaher8/SocialGuard",
-    demoLink: "https://social-guard-rouge.vercel.app/",
+    demoLink: "https://social-guard-one.vercel.app/",
     titleColor: "bg-gradient-to-r from-red-500 via-orange-400 to-yellow-500"
   },
   {
